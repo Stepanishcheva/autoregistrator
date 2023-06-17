@@ -1,0 +1,126 @@
+.name {
+    position: absolute;
+    width: 427px;
+    height: 54px;
+    left: 427px;
+    top: 25px;
+
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+
+    color: #6B4B99;
+}
+
+.file-upload {
+
+    position: absolute;
+    width: 209px;
+    height: 40px;
+    left: 113px;
+    top: 126px;
+
+    background: #D9D9D9;
+    border-radius: 10px;
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    vertical-align: center;
+    color: #6B4B99;
+}
+
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    left: 427px;
+    top: 134px;
+
+    background: #D9D9D9;
+    border-radius: 5px;
+}
+
+#date {
+    position: absolute;
+    width: 58px;
+    height: 41px;
+    left: 427px;
+    top: 93px;
+
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+
+    color: #6B4B99;
+
+}
+
+#number {
+    position: absolute;
+    width: 85px;
+    height: 41px;
+    left: 588px;
+    top: 93px;
+
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+
+    color: #6B4B99;
+}
+
+#ds {
+
+    position: absolute;
+    width: 33px;
+    height: 41px;
+    left: 776px;
+    top: 92px;
+
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+
+    color: #6B4B99;
+}
+
+#submit {
+    position: absolute;
+    width: 221px;
+    height: 40px;
+    left: 948px;
+    top: 129px;
+
+    background: #6E4A99;
+    border-radius: 10px;
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    vertical-align: middle;
+    color: #FFFFFF;
+}
+
+.image {
+    position: absolute;
+    width: 465px;
+    height: 316px;
+    left: 408px;
+    top: 258px;
+
+    background: url(image.png);
+    border-radius: 89px;
+}

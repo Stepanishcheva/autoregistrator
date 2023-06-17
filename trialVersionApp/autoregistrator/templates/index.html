@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang=«en»>
+<head>
+    <meta charset=«UTF-8»>
+    <title>Электронный регистратор</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css')}}">
+
+</head>
+<body>
+<a class="name">
+Электронный регистратор
+</a>
+<form method="post" enctype="multipart/form-data">
+	<label class="file-upload" id="uploader">
+        Выбрать файл
+        <input type="file" id="file" name="file" hidden class="hide_file">
+    </label>
+    <label id="date">
+        Дата
+        <input type="checkbox" class="checkbox" id="dateChoice" name="date" value=1" />
+        <input id ="dateValue" type="hidden">
+    </label>
+    <label id ='number'>
+        Номер
+        <input type="checkbox" class="checkbox" id="numberChoice" name="number" value=1 />
+        <input id="numberValue" hidden placeholder="номер">
+    </label>
+    <label id="ds">
+        ЭП
+        <input type="checkbox" class="checkbox" id="edsChoice" name="ds" value=1 />
+    </label>
+
+    <a id="submit" href="/process" download >Проставить штампы</a>
+</form>
+<img src ='/static/image.png' class="image" />
+</body>
+</html>
+<script>
+const checkbox = document.getElementById('dateChoice')
+checkbox.addEventListener('change', (event) => {
+  if (event.currentTarget.checked) {
+    document.getElementById('dateValue').type = 'date'
+  } else {
+    document.getElementById('dateValue').type = 'hidden'
+  }
+})
+</script>
+<script>
+const checkbox2 = document.getElementById('numberChoice')
+checkbox2.addEventListener('change', (event) => {
+  if (event.currentTarget.checked) {
+    document.getElementById('numberValue').hidden = false
+  } else {
+    document.getElementById('numberValue').hidden = true
+  }
+})
+
+
+const file = document.getElementById('file')
+file.onchange = function(){
+    document.getElementById('uploader').innerText = 'Файл загружен';
+}
+
+</script>
